@@ -16,6 +16,8 @@
 		04B0681A26DE371C00F59562 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0681826DE371C00F59562 /* HomeViewController.xib */; };
 		04B0682126DE3C8500F59562 /* OperationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0681F26DE3C8500F59562 /* OperationCell.swift */; };
 		04B0682226DE3C8500F59562 /* OperationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0682026DE3C8500F59562 /* OperationCell.xib */; };
+		04B0682826DE48C700F59562 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0682626DE48C700F59562 /* TaskCell.swift */; };
+		04B0682926DE48C700F59562 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0682726DE48C700F59562 /* TaskCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		04B0681826DE371C00F59562 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		04B0681F26DE3C8500F59562 /* OperationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationCell.swift; sourceTree = "<group>"; };
 		04B0682026DE3C8500F59562 /* OperationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperationCell.xib; sourceTree = "<group>"; };
+		04B0682626DE48C700F59562 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		04B0682726DE48C700F59562 /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		04B0681026DE362900F59562 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				04B0682526DE48AD00F59562 /* Task Cell */,
 				04B0681E26DE3C5A00F59562 /* Operation Cell */,
 				04B0681426DE36C500F59562 /* Home */,
 			);
@@ -122,6 +127,15 @@
 				04B0682026DE3C8500F59562 /* OperationCell.xib */,
 			);
 			path = "Operation Cell";
+			sourceTree = "<group>";
+		};
+		04B0682526DE48AD00F59562 /* Task Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04B0682626DE48C700F59562 /* TaskCell.swift */,
+				04B0682726DE48C700F59562 /* TaskCell.xib */,
+			);
+			path = "Task Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +199,7 @@
 				04B067F626DE340400F59562 /* Assets.xcassets in Resources */,
 				04B067F426DE340100F59562 /* Main.storyboard in Resources */,
 				04B0682226DE3C8500F59562 /* OperationCell.xib in Resources */,
+				04B0682926DE48C700F59562 /* TaskCell.xib in Resources */,
 				04B0681A26DE371C00F59562 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +215,7 @@
 				04B067EF26DE340100F59562 /* SceneDelegate.swift in Sources */,
 				04B0681926DE371C00F59562 /* HomeViewController.swift in Sources */,
 				04B0682126DE3C8500F59562 /* OperationCell.swift in Sources */,
+				04B0682826DE48C700F59562 /* TaskCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

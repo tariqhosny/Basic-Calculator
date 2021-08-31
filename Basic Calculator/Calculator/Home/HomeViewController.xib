@@ -14,6 +14,8 @@
                 <outlet property="firstNumberTf" destination="YB1-NM-0eR" id="fXs-Zl-OjQ"/>
                 <outlet property="operationCollectionView" destination="XwF-jS-o72" id="WQH-2S-noy"/>
                 <outlet property="secondNumberTf" destination="MUj-y3-U2n" id="DH6-5z-2hO"/>
+                <outlet property="tasksCountLb" destination="Y3j-Jo-98K" id="7dT-oJ-QzA"/>
+                <outlet property="tasksTableView" destination="652-uP-4eC" id="5Qi-sY-Lgk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -91,6 +93,9 @@
                                                                     <state key="normal" title="Calculate">
                                                                         <color key="titleColor" systemColor="systemGray6Color"/>
                                                                     </state>
+                                                                    <connections>
+                                                                        <action selector="calculateButtonPressed:" destination="-1" eventType="touchUpInside" id="9HB-L2-yVG"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -114,6 +119,9 @@
                                                                     <state key="normal" title="reset">
                                                                         <color key="titleColor" systemColor="systemRedColor"/>
                                                                     </state>
+                                                                    <connections>
+                                                                        <action selector="resetButtonPressed:" destination="-1" eventType="touchUpInside" id="tgD-tb-mb9"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>

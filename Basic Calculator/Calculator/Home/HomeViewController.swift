@@ -13,12 +13,13 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var operationCollectionView: UICollectionView!
     @IBOutlet weak var secondNumberTf: UITextField!
     @IBOutlet weak var delayTimeTf: UITextField!
+    @IBOutlet weak var tasksCountLb: UILabel!
+    @IBOutlet weak var tasksTableView: UITableView!
     
     let operations = ["+", "-", "*", "/"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         operationCollectionView.register(UINib(nibName: "OperationCell", bundle: nil), forCellWithReuseIdentifier: "OperationCell")
         operationCollectionView.delegate = self
@@ -29,8 +30,12 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.topItem?.title = "Home"
     }
     
+    @IBAction func calculateButtonPressed(_ sender: UIButton) {
+    }
     
-
+    @IBAction func resetButtonPressed(_ sender: UIButton) {
+    }
+    
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
