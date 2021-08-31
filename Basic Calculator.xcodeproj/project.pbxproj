@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04972CD526DE734A0069EDDE /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04972CD426DE734A0069EDDE /* UIViewController+Extension.swift */; };
+		04972CD926DE737D0069EDDE /* HomeViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04972CD826DE737D0069EDDE /* HomeViewController+Extensions.swift */; };
 		04B067ED26DE340100F59562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B067EC26DE340100F59562 /* AppDelegate.swift */; };
 		04B067EF26DE340100F59562 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B067EE26DE340100F59562 /* SceneDelegate.swift */; };
 		04B067F426DE340100F59562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B067F226DE340100F59562 /* Main.storyboard */; };
@@ -18,9 +20,13 @@
 		04B0682226DE3C8500F59562 /* OperationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0682026DE3C8500F59562 /* OperationCell.xib */; };
 		04B0682826DE48C700F59562 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0682626DE48C700F59562 /* TaskCell.swift */; };
 		04B0682926DE48C700F59562 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0682726DE48C700F59562 /* TaskCell.xib */; };
+		04B0685326DE6B4900F59562 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0685226DE6B4900F59562 /* TaskModel.swift */; };
+		04B0685626DE6C2300F59562 /* TaskOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0685526DE6C2300F59562 /* TaskOperations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04972CD426DE734A0069EDDE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		04972CD826DE737D0069EDDE /* HomeViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Extensions.swift"; sourceTree = "<group>"; };
 		04B067E926DE340100F59562 /* Basic Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basic Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B067EC26DE340100F59562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B067EE26DE340100F59562 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +40,8 @@
 		04B0682026DE3C8500F59562 /* OperationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperationCell.xib; sourceTree = "<group>"; };
 		04B0682626DE48C700F59562 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		04B0682726DE48C700F59562 /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		04B0685226DE6B4900F59562 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		04B0685526DE6C2300F59562 /* TaskOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskOperations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04972CD326DE73260069EDDE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04972CD426DE734A0069EDDE /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		04B067E026DE340100F59562 = {
 			isa = PBXGroup;
 			children = (
@@ -76,9 +92,8 @@
 		04B0681026DE362900F59562 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				04B0682526DE48AD00F59562 /* Task Cell */,
-				04B0681E26DE3C5A00F59562 /* Operation Cell */,
-				04B0681426DE36C500F59562 /* Home */,
+				04B0685026DE6B2700F59562 /* Model */,
+				04B0685126DE6B3000F59562 /* ViewController */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -86,6 +101,7 @@
 		04B0681126DE367800F59562 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				04972CD326DE73260069EDDE /* Extensions */,
 				04B0681326DE36AA00F59562 /* View */,
 				04B0681226DE369C00F59562 /* Launching */,
 			);
@@ -114,8 +130,9 @@
 		04B0681426DE36C500F59562 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				04B0681726DE371C00F59562 /* HomeViewController.swift */,
 				04B0681826DE371C00F59562 /* HomeViewController.xib */,
+				04B0681726DE371C00F59562 /* HomeViewController.swift */,
+				04972CD826DE737D0069EDDE /* HomeViewController+Extensions.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -136,6 +153,25 @@
 				04B0682726DE48C700F59562 /* TaskCell.xib */,
 			);
 			path = "Task Cell";
+			sourceTree = "<group>";
+		};
+		04B0685026DE6B2700F59562 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04B0685226DE6B4900F59562 /* TaskModel.swift */,
+				04B0685526DE6C2300F59562 /* TaskOperations.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04B0685126DE6B3000F59562 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04B0682526DE48AD00F59562 /* Task Cell */,
+				04B0681E26DE3C5A00F59562 /* Operation Cell */,
+				04B0681426DE36C500F59562 /* Home */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,9 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04972CD526DE734A0069EDDE /* UIViewController+Extension.swift in Sources */,
+				04B0685326DE6B4900F59562 /* TaskModel.swift in Sources */,
 				04B067ED26DE340100F59562 /* AppDelegate.swift in Sources */,
 				04B067EF26DE340100F59562 /* SceneDelegate.swift in Sources */,
 				04B0681926DE371C00F59562 /* HomeViewController.swift in Sources */,
+				04972CD926DE737D0069EDDE /* HomeViewController+Extensions.swift in Sources */,
+				04B0685626DE6C2300F59562 /* TaskOperations.swift in Sources */,
 				04B0682126DE3C8500F59562 /* OperationCell.swift in Sources */,
 				04B0682826DE48C700F59562 /* TaskCell.swift in Sources */,
 			);

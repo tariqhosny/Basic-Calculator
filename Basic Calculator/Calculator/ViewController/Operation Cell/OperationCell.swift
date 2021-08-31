@@ -15,12 +15,15 @@ class OperationCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        containerView.backgroundColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
+        containerView.backgroundColor = .systemGray6
         containerView.layer.cornerRadius = 5
-//        containerView.layer.shadowColor = UIColor.lightGray.cgColor
-//        containerView.layer.shadowOpacity = 0.4
-//        containerView.layer.shadowOffset = .zero
-//        containerView.layer.shadowRadius = 5
+    }
+    
+    override var isSelected: Bool {
+        didSet {
+            self.containerView.backgroundColor  = isSelected ? .gray : .systemGray6
+            self.operationLb.textColor = isSelected ? .white : .black
+        }
     }
 
 }

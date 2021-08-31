@@ -15,6 +15,8 @@
                 <outlet property="operationCollectionView" destination="XwF-jS-o72" id="WQH-2S-noy"/>
                 <outlet property="secondNumberTf" destination="MUj-y3-U2n" id="DH6-5z-2hO"/>
                 <outlet property="tasksCountLb" destination="Y3j-Jo-98K" id="7dT-oJ-QzA"/>
+                <outlet property="tasksStack" destination="2Oy-AB-WUZ" id="lXD-BL-wMN"/>
+                <outlet property="tasksTableHeight" destination="aze-my-BSB" id="eWR-le-wJt"/>
                 <outlet property="tasksTableView" destination="652-uP-4eC" id="5Qi-sY-Lgk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -107,7 +109,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcM-Jz-gXm">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="33"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="3 operations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3j-Jo-98K">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="3 Tasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3j-Jo-98K">
                                                                     <rect key="frame" x="0.0" y="0.0" width="335" height="33"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -125,7 +127,7 @@
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
-                                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="652-uP-4eC">
+                                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="652-uP-4eC">
                                                             <rect key="frame" x="0.0" y="53" width="374" height="100"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
