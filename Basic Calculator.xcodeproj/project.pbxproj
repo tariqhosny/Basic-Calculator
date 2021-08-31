@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		04972CD526DE734A0069EDDE /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04972CD426DE734A0069EDDE /* UIViewController+Extension.swift */; };
 		04972CD926DE737D0069EDDE /* HomeViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04972CD826DE737D0069EDDE /* HomeViewController+Extensions.swift */; };
+		04972CE226DE8AAC0069EDDE /* LocationPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04972CE026DE8AAC0069EDDE /* LocationPopUp.swift */; };
+		04972CE326DE8AAC0069EDDE /* LocationPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04972CE126DE8AAC0069EDDE /* LocationPopUp.xib */; };
+		04972CE726DE906A0069EDDE /* HomeViewController+LocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04972CE626DE906A0069EDDE /* HomeViewController+LocationExtension.swift */; };
 		04B067ED26DE340100F59562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B067EC26DE340100F59562 /* AppDelegate.swift */; };
 		04B067EF26DE340100F59562 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B067EE26DE340100F59562 /* SceneDelegate.swift */; };
 		04B067F426DE340100F59562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B067F226DE340100F59562 /* Main.storyboard */; };
@@ -27,6 +30,9 @@
 /* Begin PBXFileReference section */
 		04972CD426DE734A0069EDDE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		04972CD826DE737D0069EDDE /* HomeViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Extensions.swift"; sourceTree = "<group>"; };
+		04972CE026DE8AAC0069EDDE /* LocationPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPopUp.swift; sourceTree = "<group>"; };
+		04972CE126DE8AAC0069EDDE /* LocationPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationPopUp.xib; sourceTree = "<group>"; };
+		04972CE626DE906A0069EDDE /* HomeViewController+LocationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+LocationExtension.swift"; sourceTree = "<group>"; };
 		04B067E926DE340100F59562 /* Basic Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basic Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B067EC26DE340100F59562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B067EE26DE340100F59562 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,15 @@
 				04972CD426DE734A0069EDDE /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04972CDF26DE8A810069EDDE /* Location Pop Up */ = {
+			isa = PBXGroup;
+			children = (
+				04972CE026DE8AAC0069EDDE /* LocationPopUp.swift */,
+				04972CE126DE8AAC0069EDDE /* LocationPopUp.xib */,
+			);
+			path = "Location Pop Up";
 			sourceTree = "<group>";
 		};
 		04B067E026DE340100F59562 = {
@@ -133,6 +148,7 @@
 				04B0681826DE371C00F59562 /* HomeViewController.xib */,
 				04B0681726DE371C00F59562 /* HomeViewController.swift */,
 				04972CD826DE737D0069EDDE /* HomeViewController+Extensions.swift */,
+				04972CE626DE906A0069EDDE /* HomeViewController+LocationExtension.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -167,6 +183,7 @@
 		04B0685126DE6B3000F59562 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				04972CDF26DE8A810069EDDE /* Location Pop Up */,
 				04B0682526DE48AD00F59562 /* Task Cell */,
 				04B0681E26DE3C5A00F59562 /* Operation Cell */,
 				04B0681426DE36C500F59562 /* Home */,
@@ -231,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04972CE326DE8AAC0069EDDE /* LocationPopUp.xib in Resources */,
 				04B067F926DE340400F59562 /* LaunchScreen.storyboard in Resources */,
 				04B067F626DE340400F59562 /* Assets.xcassets in Resources */,
 				04B067F426DE340100F59562 /* Main.storyboard in Resources */,
@@ -254,7 +272,9 @@
 				04B0681926DE371C00F59562 /* HomeViewController.swift in Sources */,
 				04972CD926DE737D0069EDDE /* HomeViewController+Extensions.swift in Sources */,
 				04B0685626DE6C2300F59562 /* TaskOperations.swift in Sources */,
+				04972CE226DE8AAC0069EDDE /* LocationPopUp.swift in Sources */,
 				04B0682126DE3C8500F59562 /* OperationCell.swift in Sources */,
+				04972CE726DE906A0069EDDE /* HomeViewController+LocationExtension.swift in Sources */,
 				04B0682826DE48C700F59562 /* TaskCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

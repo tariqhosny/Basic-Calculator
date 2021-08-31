@@ -32,8 +32,7 @@ class TaskCell: UITableViewCell {
         
     }
     
-    @objc func onTimer()
-    {
+    @objc func onTimer(){
         timeLeft -= 1
         resultLb.text = "after \(timeLeft) seconds left"
 

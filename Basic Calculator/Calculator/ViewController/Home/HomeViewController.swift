@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 class HomeViewController: UIViewController {
 
@@ -19,6 +21,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tasksStack: UIStackView!
     
     var timesPicker: UIPickerView! = UIPickerView()
+    var locationManager = CLLocationManager()
     
     var tasks: [TaskModel] = []
     var isOperationSelected = false
@@ -31,6 +34,7 @@ class HomeViewController: UIViewController {
         setupPickerView()
         hideKeyboardWhenTappedAround()
         tasksStack.isHidden = true
+        locationBtn()
     }
     
     override func viewDidAppear(_ animated: Bool) {

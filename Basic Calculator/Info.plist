@@ -62,5 +62,9 @@
 	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>The app needs your location to detect your address</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>The app needs your location to detect your address</string>
 </dict>
 </plist>
